@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import App from "./App";
+import Modal from "./Modal";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<App />);
+it("finds sign in", () => {
+  const { getByText } = render(<Modal></Modal>);
   const linkElement = getByText(/Sign In/i);
   expect(linkElement).toBeInTheDocument();
 });
